@@ -14,39 +14,39 @@
 <body>
 
     <!-- sidebar -->
-<section id="sidebar">
-    <a href="#" class="brand">
-        <img src="img/logo.png" alt="The Laundry Studio">
-        <span>The Laundry Studio</span>
-    </a>
-    <ul class="side-menu">
-        <li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
-        <li class="divider" data-text="main">Main</li>
-        <li>
-            <a href="#"><i class='bx bxs-cog icon' ></i> Services <i class='bx bx-chevron-right icon-right'></i></a>
-            <ul class="side-dropdown">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="#">Requested Services</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#"><i class='bx bxs-cart icon' ></i> Orders <i class='bx bx-chevron-right icon-right'></i></a>
-            <ul class="side-dropdown">
-                <li><a href="#">New Orders</a></li>
-                <li><a href="#">Inprogress Orders</a></li>
-                <li><a href="#">Completed Orders</a></li>
-                <li><a href="#">Rejected Orders</a></li>
-            </ul>
-        </li>
-        <li><a href="#"><i class='bx bxs-user icon'></i></i> Customer Management <i class='bx bx-chevron-right icon-right'></i></a>
-            <ul class="side-dropdown">
-                <li><a href="#">Customer List</a></li>
-                <li><a href="#">Customer Reviews</a></li>
-            </ul>
-        </li>
-    </ul>
-</section>
-<!-- sidebar -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <img src="img/logo.png" alt="The Laundry Studio">
+            <span>The Laundry Studio</span>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+            <li class="divider" data-text="main">Main</li>
+            <li>
+                <a href="#"><i class='bx bxs-cog icon' ></i> Services <i class='bx bx-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Requested Services</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class='bx bxs-cart icon' ></i> Orders <i class='bx bx-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">New Orders</a></li>
+                    <li><a href="#">Inprogress Orders</a></li>
+                    <li><a href="#">Completed Orders</a></li>
+                    <li><a href="#">Rejected Orders</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class='bx bxs-user icon'></i></i> Customer Management <i class='bx bx-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Customer List</a></li>
+                    <li><a href="#">Customer Reviews</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- sidebar -->
 
     <!-- navbar -->
 	<section id="content">
@@ -92,7 +92,15 @@
                     </div>
                     <div class="mb-3">
                       <label for="sdesc">Service Description:</label>
-                      <textarea type="sdesc" class="form-control" id="sdesc" placeholder="Enter description" name="sdesc"></textarea>
+                      <textarea class="form-control" id="sdesc" rows="4" name="sdesc"></textarea>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="stype">Service Type</label>
+                        <input type="text" class="form-control" id="stype" name="stype">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="price">Service Price ($):</label>
+                        <input type="number" id="price" name="price" step="0.01" required>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Submit</button>
