@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="styles.css">
-    <title>Services - The Laundry Studio</title>
+    <title>The Laundry Studio</title>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
                 <a href="#"><i class='bx bxs-cog icon' ></i> Services <i class='bx bx-chevron-right icon-right'></i></a>
                 <ul class="side-dropdown">
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="requested-services.html">Requested Services</a></li>
+                    <li><a href="#">Requested Services</a></li>
                 </ul>
             </li>
             <li>
@@ -81,31 +81,55 @@
 			<ul class="breadcrumbs">
 				<li><a href="/">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="#" class="active">Services</a></li>
+				<li><a href="#" class="active">Requested Services</a></li>
 			</ul>
 			
-			<div class="serviceform">
-                <form action="/action_page.php">
-                    <div class="form_input">
-                      <label for="sname">Service Name:</label>
-                      <input type="name" class="form-control" id="sname" placeholder="Enter the service name" name="sname">
-                    </div>
-                    <div class="form_input">
-                      <label for="sdesc">Service Description:</label>
-                      <textarea class="form-control" id="sdesc" rows="3" name="sdesc"></textarea>
-                    </div>
-                    <div class="form_input">
-                        <label for="stype">Service Type</label>
-                        <input type="text" class="form-control" id="stype" name="stype">
-                    </div>
-                    <div class="form_input">
-                        <label for="price">Service Price ($):</label>
-                        <input type="number" id="price" name="price" step="0.01" required>
-                    </div>
-                    
-                    <button type="submit" class="service-btn">Submit</button>
-                </form>
+			<div class="requested-services">
+                <h2>Requested Laundry Services</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Service Name</th>
+                                <th>Customer Name</th>
+                                <th>Request Date</th>
+                                <th>Price (₹)</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example data row -->
+                            <tr>
+                                <td>1</td>
+                                <td>Dry Cleaning</td>
+                                <td>ABC</td>
+                                <td>2025-01-22</td>
+                                <td>150.50</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                                <td>
+                                    <button class="btn btn-success btn-sm approve-btn">Approve</button>
+                                    <button class="btn btn-danger btn-sm reject-btn">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Wash & Fold</td>
+                                <td>XYZ</td>
+                                <td>2025-01-23</td>
+                                <td>120.00</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                                <td>
+                                    <button class="btn btn-success btn-sm" disabled>Approved</button>
+                                    <button class="btn btn-danger btn-sm" disabled>Reject</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            
 		</main>
 		<!-- MAIN -->
 	</section>
